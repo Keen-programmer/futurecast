@@ -1,0 +1,429 @@
+
+:root {
+    --primary-color: #0B4169;
+    --primary-color2: #18B7EB;
+    --secondary-color: #6c757d;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --text-color: white;
+  }
+
+body {
+    font-family: Russo One;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+p{
+    font-family: sans-serif;
+}
+
+.headerflex {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-right: 4%;
+}
+
+.headerflex, img {
+    margin-left: 2%;
+}
+
+.headerflex, a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: Russo one;
+    font-size: 20px;
+}
+
+header nav a {
+    margin-right: 30px;
+}
+
+main {
+    margin-top: 10%;
+}
+
+p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.button {
+        background-color: var(--primary-color2);
+        padding: 15px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        width: 13%;
+        cursor: pointer;
+        font-size: 1rem;
+}
+
+
+.flexcontain {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+/* Initial state: hidden and slightly translated */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When the element is visible (scrolled into view), add this class to trigger fade-in */
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Style the hamburger button to remove default background/border and align icon */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: add hover effect for visual feedback */
+.hamburger:hover svg {
+    opacity: 0.8;
+}
+
+/* Basic styles for header layout */
+.headerflex {
+    position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  width: 95%;
+  z-index: 1000;
+  background-color: var(--primary-color);
+}
+
+/* Navigation links styling for desktop */
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navlinks a.active {
+  font-weight: bold;
+    border-bottom: 2px solid var(--primary-color2);
+}
+
+.mobile-register-btn{
+  display: none;
+}
+
+/* Hamburger button hidden on desktop */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide desktop nav links */
+  .navlinks {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+
+  /* Style for mobile menu */
+  #mobileMenu {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 180px;
+    flex-direction: column;
+    padding: 10px;
+    display: none; 
+    background-color: #0B4169;
+    border-radius: 4px;
+    z-index: 999;
+  }
+
+  #mobileMenu.show {
+    display: flex;
+  }
+
+  /* Style links inside mobile menu */
+  #mobileMenu a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+  }
+
+  #mobileMenu a:hover {
+    opacity: 0.8;
+  }
+}
+
+.mobile-hero {
+    display: none;
+}
+
+.after-hero {
+    margin-top: 200px;
+}
+
+.address {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+     margin-top: 10%;
+      margin-left: 12%; 
+      margin-right: 12%;
+}
+
+
+.timer {
+    margin: 10% 15% 5% 15%; 
+    display: flex; 
+    justify-content:space-around; 
+    align-items: center; 
+    text-align: center; 
+    border: 2px solid var(--primary-color2); 
+    border-radius: 20px; 
+    padding:5px 25px 5px 25px;
+}
+
+
+.speakers-btn {
+    margin-left: 70%; margin-top: 5%; display: flex; justify-content: space-between; align-items: center;
+}
+
+.change-cover {
+    position: absolute; 
+      top: 40%; /* Adjust as needed for vertical placement */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Center the div horizontally */
+      background-color: var(--primary-color); 
+      padding: 15px; 
+      width: 100%; /* Optional: limit width for responsiveness */
+}
+
+.change-cover-text {
+    font-size: 70px; margin: 0;
+}
+
+.change-cover-btn {
+        background-color: var(--primary-color2);
+        padding: 15px;
+        border: none;
+        color: white;
+        font-weight: bolder;
+        width: 30%;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 1.2em;
+}
+
+
+.footer{
+        margin-top: 15%; 
+        border-top: 2px solid var(--primary-color2);
+        margin: 0% 5% 5% 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.desktop-head {
+    margin: 15% 4% 4% 4%;
+}
+
+.speakers-flex {
+    flex: 5;
+    background-color: #044475;   
+    border-bottom: 2px solid var(--primary-color2)
+}
+
+/* Container for all flex items */
+.flex-container {
+  margin-top: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures items stretch to same height */
+  gap: 20px;
+  flex-basis: auto;
+}
+
+/* Each speaker card */
+.speakers-flex {
+  flex: 1 1 200px; /* Grow, shrink, basis */
+  display: flex;
+  flex-direction: column;
+  max-width: 250px; /* Optional: to limit size */
+  height: 450px; /* Ensures it stretches if parent is constrained */
+}
+
+/* Inner content to fill flex item height */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Make images fill their container and stay consistent */
+.card-content img {
+  width: 100%;
+  height: 250px; /* Fixed height for all images, adjust as needed */
+  object-fit: cover; /* Keeps aspect ratio, cropping if necessary */
+  border-bottom: 2px solid whitesmoke;
+  flex-shrink: 0;
+  transition: opacity 0.3s ease, filter 0.3s ease; /* Transition both */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  filter: blur(0); /* Initial blur */
+}
+
+
+.card-content:hover img {
+  opacity: 0.7; /* Dim the image */
+  filter: blur(2px); /* Add blur on hover */
+    transform: scale(1.1); /* Scale up on hover */
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Info box should take remaining space */
+.info-box {
+  background-color: #044475;
+  padding: 5px 15px 13px 15px;
+  flex: 1; /* Fill remaining space */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Optional: style headings and paragraphs for consistency */
+.speakers-name {
+  margin: 0;
+  font-size: 20px;
+}
+
+.speakers-title {
+  margin-top: 0.5em;
+  font-size: 1em;
+}
+
+
+/* MOBILE VIEW DESIGN HERE... */
+@media (max-width: 768px) {
+
+  .mobile-register-btn{
+  display: block;
+}
+
+  .flex-container {
+    justify-content: center;
+  }
+
+    .speakers-title {
+        font-size: 17px;
+    }
+
+    .speakers-name{
+        font-size: 17px;
+    }
+
+    .speakers-flex {
+        width: 50%;
+    }
+
+    .desktop-head {
+        margin: 30% 4% 4% 4% ;
+    }
+
+    .footer {
+        display: block;
+        margin-left: 8%;
+    }
+
+    .change-cover-btn {
+        width: 50%;
+    }
+    .speakers-btn {
+        margin-left: 0px;
+    }
+
+    .change-cover {
+        width: 100%;
+    }
+
+    .change-cover-text {
+        font-size: 30px;
+    }
+
+    .change-shape {
+        width: 300px;
+        height: 300px;
+    }
+
+    .timer {
+        width: 85%;
+        margin-left: 0px;
+        padding-left: 25px;
+    }
+
+    #days, #hours, #minutes, #seconds {
+        font-size: 15px;
+    }
+
+    .desktop-hero {
+        display: none;
+    }
+
+    .mobile-hero {
+        display: block;
+    }
+
+    .community-shape {
+        display: none;
+    }
+
+    .after-hero {
+        margin-top: 10px;
+    }
+    
+    .banner {
+        width: 300px;
+        height: 200px
+    }
+
+    .address {
+        display: block;
+    }
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body{
+  margin: 2%;
+}
