@@ -61,7 +61,7 @@
 </header>
 
 
-<main>
+<main style="margin-top: 20%;">
        <h1>Terms and Conditions for FUTURECAST AFRICA</h1>
 
 <h3>Terms and Conditions</h3>
@@ -249,7 +249,40 @@ If you have any questions about these Terms and Conditions, You can contact us:
   </footer>
 
     <!-- Link to your JavaScript file (optional, often placed at the end of the body for performance) -->
-    <script src="js/script.js"></script>
+    <script>
+           //Mobile menu toggle 
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      const isExpanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+      
+      // Toggle aria-expanded attribute
+      hamburger.setAttribute('aria-expanded', String(!isExpanded));
+      
+      // Toggle 'show' class to display/hide menu
+      mobileMenu.classList.toggle('show');
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.navlinks a');
+
+    // Get current path, e.g., /index.html
+    const currentPath = window.location.pathname;
+
+    // Loop through links to find the one matching current URL
+    links.forEach(link => {
+      const linkPath = new URL(link.href).pathname;
+
+      // Check if link's pathname matches current path
+      if (linkPath === currentPath) {
+        link.classList.add('active');
+      }
+    });
+  });
+    </script>
 
 </body>
 </html>
