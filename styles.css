@@ -225,12 +225,12 @@ btn-hover:hover {
 
 .change-cover {
     position: absolute; 
-      top: 40%; /* Adjust as needed for vertical placement */
-      left: 50%; /* Center horizontally */
-      transform: translateX(-50%); /* Center the div horizontally */
+      top: 40%;  
+      left: 50%;  
+      transform: translateX(-50%);  
       background-color: var(--primary-color); 
       padding: 15px; 
-      width: 100%; /* Optional: limit width for responsiveness */
+      width: 100%;  
 }
 
 .change-cover-text {
@@ -281,7 +281,7 @@ btn-hover:hover {
 
 /* Each speaker card */
 .speakers-flex {
-  flex: 1 1 200px; /* Grow, shrink, basis */
+  flex: 1 1 200px; 
   display: flex;
   flex-direction: column;
   max-width: 250px; /* Optional: to limit size */
