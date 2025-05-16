@@ -58,6 +58,7 @@ p {
         width: 13%;
         cursor: pointer;
         font-size: 1rem;
+        margin-right: 7%;
 }
 
 
@@ -90,6 +91,7 @@ p {
     padding: 10px;
     display: flex;
     align-items: center;
+    margin-right: 3%;
 }
 
 /* Optional: add hover effect for visual feedback */
@@ -101,11 +103,12 @@ p {
 .headerflex {
     position: fixed;
   top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  width: 90%;
+  width: 100%;
   z-index: 1000;
   background-color: var(--primary-color);
 }
