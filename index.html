@@ -15,15 +15,116 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">             
 
-    <title>FUTURECAST AFRICA - IDCL Conference 2025</title>
+    <title>FUTURECAST AFRICA - IDCL CONFERENCE 2025</title>
 
     <!-- CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Favicon -->
     <link rel="icon" href="logo.svg" type="image/x-icon">
 
     <meta property="og:type" content="website">
+
+<meta property="og:title" content="FUTURECAST AFRICA - IDCL CONFERENCE 2025" />
+<meta property="og:description" content="Futurecast Africa is designed to shape Africa's future by boldly showcasing its identity, potential and promise to the world." />
+<meta property="og:image" content="https://conference.idclafrica.com/logo.svg" />
+<meta property="og:url" content="https://conference.idclafrica.com" />
+<meta property="og:type" content="website" />
+
+    <style>
+  .video-container {
+    width: 100%;
+    max-width: 640px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #0B4169;
+    margin: 0 auto;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+    .contact-form {
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #dc3545;
+      margin-left: 33.3%;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    /* Style input and textarea fields */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px 10px 10px 40px; /* left padding for icon space */
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    /* Container for email icon inside input */
+    .input-with-icon {
+      position: relative;
+    }
+
+    /* Position the icon */
+    .input-with-icon i {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: #999;
+    }
+
+    /* Style the submit button */
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Feedback message style */
+    #status {
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+  
+</style>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 </head>
 <body>
@@ -45,7 +146,7 @@
         <nav id="mobileMenu" class="navlinks">
           <a href="index.html" id="active">Home</a>
           <a href="about.html">About</a>
-          <a href="speakers.html">Speakers</a>
+          <a href="speaker.html">Speakers</a>
           <a href='https://lu.ma/l8suhfxp'
           class="mobile-register-btn"
           style="
@@ -72,18 +173,18 @@
           <!-- Main content of the first section -->
           <div class="flexcontain" style=" margin-right: 7%;">
             <div style="margin-top: -10%;">
-              <small class="fade-in" style="font-size: larger; color:rgb(187, 185, 185);">FutureCast Africa 2025</small>
-              <p class="fade-in" style="font-size:x-large;">
+              <small class="fade-in" style="font-size: 15px; color:rgb(187, 185, 185);">FutureCast Africa 2025</small>
+              <p class="fade-in" style="font-size:20px; margin-top: -1px;">
                 <span  style="color: var(--primary-color2);">BRANDING</span> YOUR IDENTITY <br />
                 WITH <span style="color: var(--primary-color2);"> INNOVATION</span>
               </p>
             </div>
-            <div style="margin-right: 10%;">
+            <div style="margin-right: 11%;">
               <img src="shapes/Community.svg" width="350px" height="350px" alt="Community shape for FutureCast Africa event" /><br />
             </div>
             <div style="margin-top:150px">
-                <small class="fade-in" style="font-size: larger; color:rgb(187, 185, 185);">DATE & TIME</small>
-                <p class="fade-in" style="font-size:x-large;">
+                <small class="fade-in" style="font-size: 15px; color:rgb(187, 185, 185);">DATE & TIME</small>
+                <p class="fade-in" style="font-size:20px; margin-top: -1px;">
                   <span style="color: var(--primary-color2);"> THURSDAY 7TH </span> AUGUST <br />
                   2025 <span style="color: var(--primary-color2);"> 9AM</span>
                 </p>
@@ -108,7 +209,7 @@
                 style="
                   position: absolute; 
                   top: 85%; 
-                  left: 45%; 
+                  left: 44%; 
                   transform: translate(-50%, -50%);
                 "
               />
@@ -186,9 +287,9 @@
         <img alt="futurecast africa" class="community-shape" src="shapes/Community.svg" width="200px" height="200px" style="padding-top: 150px;" />
   </section>
 
-  <section style="text-align: center; margin-top: 30px;">
-    <img class="fade-in banner" src="shapes/banner.jpg" width="1000px" height="500px" />
-  </section>
+  <div class="video-container" style="text-align: center; margin-top: 30px;">
+  <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/Xy2NkekbbJw?si=N1F_TbQEDmYMQZaT" title="IDCL Conference 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
 
   <section class="address">
     <div>
@@ -263,7 +364,7 @@
     </div>
 
     <div style="flex: 5;">
-      <img src="shapes/storytelling.jpg" style="height: 200px; width:100%;" alt="storytelling"/>
+      <img src="shapes/story.jpg" style="height: 200px; width:100%;" alt="storytelling"/>
       <div
         style="
         background-color: #044475; 
@@ -279,7 +380,7 @@
     </div>
 
     <div style="flex: 5;">
-      <img src="shapes/branding.jfif" style="height: 200px; width:100%;" alt="branding"/>
+      <img src="shapes/brand.jpg" style="height: 200px; width:100%;" alt="branding"/>
       <div
         style="
         background-color: #044475; 
@@ -300,15 +401,6 @@
 <section style="margin:10% 3% 1% 3%">
     <h1 style="font-size: 50px;">Meet The Speakers</h1>
     <div class="flex-container">
-  <div class="speakers-flex">
-    <div class="card-content">
-      <img class="fade-in" src="speakers/apostle.jpg" alt="Apostle Femi Lazarus" />
-      <div class="info-box">
-        <h2 class="fade-in speakers-name">Apostle Femi Lazarus</h2>
-        <p class="fade-in speakers-title">Founder, Light Nation Church</p>
-      </div>
-    </div>
-  </div>
 
   <div class="speakers-flex">
     <div class="card-content">
@@ -325,7 +417,17 @@
       <img class="fade-in" src="speakers/Leonard.jpg" alt="Aro Leonard" />
       <div class="info-box">
         <h2 class="fade-in speakers-name">Aro Leonard</h2>
-        <p class="fade-in speakers-title">Founder & CEO, Kleverest Communications</p>
+        <p class="fade-in speakers-title">Founder & CEO, Klevaro Communications (Kleverest Scenta)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="speakers-flex">
+    <div class="card-content">
+      <img class="fade-in" src="speakers/sowunmi.jpg" alt="Dr Segun Sowunmi" />
+      <div class="info-box">
+        <h2 class="fade-in speakers-name">Dr Segun Sowunmi</h2>
+        <p class="fade-in speakers-title">Political Activist</p>
       </div>
     </div>
   </div>
@@ -339,6 +441,8 @@
       </div>
     </div>
   </div>
+</div>
+
 </div>
 
     <div class="speakers-btn">
@@ -356,7 +460,7 @@
         font-size: 1.2em;">Register</button>
       <button
         class="btn-hover"
-        onclick="window.location.href='speakers.html'"
+        onclick="window.location.href='speaker.html'"
         style="
         background-color: var(--primary-color);
         border: 2px solid var(--primary-color2);
@@ -474,6 +578,39 @@
   </section>
 
   <section style="margin-top: 14%;">
+    <h2 class="fade-in" style="font-size: 50px; text-align: center;">PARTNER WITH US</h2>
+    <p class="fade-in" style="text-align: center;">Our partners are vitally important to our success. <br />
+      These individuals and companies believe in the <br />
+      power of our mission and are supportive of our <br />
+      efforts now and in the future.</p>
+    <p class="fade-in" style="text-align: center;">FutureCast is supported by a diverse range of <br />
+      businesses and organizations, all of whom are <br />
+      passionate about what we're building together.</p>
+    <p class="fade-in" style="text-align: center;">Email us at partner@idclafrica.com</p>
+  <div class="contact-form" style="text-align: center;" id="partner">
+      <form id="contact-form" action="send_mail.php" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group input-with-icon">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="write your message" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <div id="status"></div>
+       </form>
+  </div>
+
+
+
     <h1 class="fade-in" style="font-size: 50px; text-align: center;">MEET OUR PARTNERS</h1>
     <p class="fade-in" style="text-align: center;">Our partners are the brands, agencies, platforms, and <br /> Community who believe in the power
       of innovation, <br />

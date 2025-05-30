@@ -265,7 +265,7 @@ btn-hover:hover {
 
 .speakers-flex {
     flex: 3;
-    border-bottom: 2px solid var(--primary-color2)
+    
 }
 
 /* Container for all flex items */
